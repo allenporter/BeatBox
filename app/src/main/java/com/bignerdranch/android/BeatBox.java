@@ -22,7 +22,7 @@ public class BeatBox {
 
   public BeatBox(Context context) {
     mAssets = context.getAssets();
-    mSoundPool = new SoundPool(MAX_SOUNDS, AudioManager.STREAM_MUSIC, 0);``
+    mSoundPool = new SoundPool(MAX_SOUNDS, AudioManager.STREAM_MUSIC, 0);
     loadSounds();
   }
 
