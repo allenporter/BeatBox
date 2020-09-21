@@ -13,7 +13,7 @@ public class SoundViewModel extends BaseObservable {
 
   @Bindable
   public String getTitle() {
-    return mSound.getmName();
+    return mSound.getName();
   }
 
   public Sound getSound() {
