@@ -1,6 +1,9 @@
 package com.bignerdranch.android;
 
-public class SoundViewModel {
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+
+public class SoundViewModel extends BaseObservable {
   private Sound mSound;
   private BeatBox mBeatBox;
 
@@ -8,6 +11,7 @@ public class SoundViewModel {
     mBeatBox = beatbox;
   }
 
+  @Bindable
   public String getTitle() {
     return mSound.getmName();
   }
@@ -18,5 +22,6 @@ public class SoundViewModel {
 
   public void setSound(Sound sound) {
     mSound = sound;
+    notifyChange();
   }
 }
